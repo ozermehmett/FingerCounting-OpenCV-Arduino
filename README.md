@@ -6,6 +6,11 @@ The system captures hand gestures using a camera, processes them using OpenCV al
 and sends this information to the Arduino board. The Arduino board then turns on/off the corresponding number of LEDs based on the number of fingers detected.
 The project can be named "FingerCounting-OpenCV-Arduino" to highlight the use of OpenCV and Arduino in the project.
 
+
+## Hand Landmark Model
+* After the palm detection over the whole image our subsequent hand landmark model performs precise keypoint localization of 21 3D hand-knuckle coordinates inside the detected hand regions via regression, that is direct coordinate prediction. The model learns a consistent internal hand pose representation and is robust even to partially visible hands and self-occlusions.
+![ddd](https://user-images.githubusercontent.com/115498182/236805586-37eac86a-7fb3-4c0b-b9dd-3ef1a5bfe2f4.png)
+
 ## Libraries
 
 * ## OpenCV
