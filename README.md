@@ -4,8 +4,6 @@
 This project utilizes OpenCV and Arduino to count fingers based on image processing techniques and control LEDs accordingly.
 The system captures hand gestures using a camera, processes them using OpenCV algorithms to detect the number of fingers in the image,
 and sends this information to the Arduino board. The Arduino board then turns on/off the corresponding number of LEDs based on the number of fingers detected.
-The project can be named "FingerCounting-OpenCV-Arduino" to highlight the use of OpenCV and Arduino in the project.
-
 
 ## Hand Landmark Model
 * After the palm detection over the whole image our subsequent hand landmark model performs precise keypoint localization of 21 3D hand-knuckle coordinates inside the detected hand regions via regression, that is direct coordinate prediction. The model learns a consistent internal hand pose representation and is robust even to partially visible hands and self-occlusions.
