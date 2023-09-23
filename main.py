@@ -26,7 +26,7 @@ while True:
     hlms = hands.process(rgb)
 
     #Get the dimensions
-    height, width, channel = frame.shape
+    height, width = frame.shape[:2]
 
     #If hands are detected
     if hlms.multi_hand_landmarks:
